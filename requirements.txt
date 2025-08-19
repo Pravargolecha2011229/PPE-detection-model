@@ -7,3 +7,4 @@ pandas
 matplotlib
 Pillow
 numpy<2
+plotly
