@@ -7,3 +7,5 @@ pandas
 opencv-python-headless==4.10.0.84
 numpy
 matplotlib
+--extra-index-url https://pypi.org/simple
+
