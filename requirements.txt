@@ -5,7 +5,5 @@ torchvision
 pillow
 pandas
 opencv-python-headless==4.5.5.64
-numpy
-matplotlib
 
 
