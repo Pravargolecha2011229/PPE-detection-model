@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 30
+names: ['Glass', 'Glasses', 'Gloves', 'Goggles', 'Helmet', 'Mask', 'No-Helmet', 'No-Vest', 'Person', 'Safety-Boot', 'Safety-Vest', 'Safety_shoes', 'Vest', 'combination', 'face_mask', 'face_nomask', 'glasses', 'hand_glove', 'hand_noglove', 'head_helmet', 'head_nohelmet', 'helmet', 'no helmet', 'no vest', 'no-vest', 'person', 'protective_suit', 'shoes', 'vest', 'worker']
+
+roboflow:
+  workspace: industrial-safety
+  project: ppe-shikk
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/industrial-safety/ppe-shikk/dataset/2
