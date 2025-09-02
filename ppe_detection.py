@@ -251,7 +251,8 @@ with col1:
         if file_type.startswith("image"):
             # Display uploaded image
             image = Image.open(uploaded_file)
-            st.image(image, caption="Uploaded Image", use_column_width=True)
+            st.image(image, caption="Uploaded Image", use_container_width=True)
+
 
             # Run YOLOv8 inference
             with st.spinner("🔎 Running detection..."):
@@ -271,7 +272,8 @@ with col1:
                     # Show annotated image
                     if results and len(results) > 0:
                         result_img = results[0].plot()
-                        st.image(result_img, caption="Detection Result", use_column_width=True)
+                        st.image(result_img, caption="Detection Result", use_container_width=True)
+
                     
                     # Compliance Status
                     st.subheader("📊 Compliance Analysis")
