@@ -25,15 +25,14 @@ try:
     from ultralytics import YOLO
 except ImportError as e:
     st.error(f"Error importing YOLO: {e}")
-    st.error("Please rename your file from 'code.py' to something else (e.g., 'ppe_detection.py')")
+    st.error("Check requirements.txt for Python dependencies and packages.txt for required system libraries.")
     st.stop()
 
 # Initialize session state for history
 if 'detection_history' not in st.session_state:
     st.session_state.detection_history = []
 
-# Load your trained model (update path if needed)
-MODEL_PATH = "runs/detect/train/weights/best.pt"
+
 
 # Load your trained model (update path if needed)
 MODEL_PATH = "runs/detect/train/weights/best.pt"
